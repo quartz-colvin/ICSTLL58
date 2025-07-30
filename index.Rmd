@@ -1,0 +1,144 @@
+---
+title: "The semantics of Hmong indefinites"
+author: "Quartz Colvin"
+institute: "Rutgers University"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["rutgers", "rutgers-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Introduction
+
+**FILL IN TOPIC N FRAMEWORKS???**
+
+
+---
+
+## Research questions
+
+1. **FILL IN???**
+
+2. **FILL IN???**
+
+---
+
+## Roadmap 
+
+**FILL IN???**
+
+---
+
+# Data
+
+## Demographics
+
+**FILL IN SPKR INFO/BACKGROUND???**
+
+---
+
+## Definites (Bare classifier phrases)
+
+**FILL IN???**
+
+---
+
+## Indefinites 
+
+**FILL IN???**
+
+--
+
+**ib aub is bad example???**
+
+
+---
+
+# Proposal 
+
+## Definites
+
+**classifier denotations???**
+
+**what do these mean???**
+
+**takes type e kind and returns a predicate of type e,t???**
+
+---
+
+## Definites 
+
+**iota definition???**
+
+**what's it do???**
+
+**show mini definite DP trees???**
+
+---
+
+## Indefinites
+
+**ib denotation???**
+
+**what's this mean???**
+
+**what is the type???**
+
+---
+
+## Contexts 
+
+**show tus aub and ib tus aub???**
+
+**how are the referents determined in both sentences???**
+
+---
+
+## Contexts 
+
+**show cov aub and ib cov aub???**
+
+--
+
+**show antipresup options???**
+
+--
+
+**how are the referents determined???**
+
+---
+
+### Antipresupposition
+
+**FILL IN???**
+
+---
+
+# Conclusion 
+
+**FILL IN???**
+
+---
+
+## References 
+
+**FILL IN???**
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+
+---
+
+class: center, middle
+
+# Thanks!
+
+# Cov aub! 
+
+**FILL IN???**
