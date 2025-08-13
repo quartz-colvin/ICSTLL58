@@ -46,20 +46,29 @@ Xiong, two White Hmong speakers who were raised in Wisconsin.
 
 ---
 
+# Data
+
 ## Definites (Bare classifier phrases)
 
-**FILL IN???**
+```{r, echo=FALSE}
+knitr::include_graphics("./images/data_bare_clfp.png")
+```
 
 ---
 
+# Data
+
 ## Indefinites 
 
-**FILL IN???**
+```{r, echo=FALSE}
+knitr::include_graphics("./images/data_indefinites.png")
+```
 
 --
 
-**ib aub is bad example???**
-
+```{r, echo=FALSE}
+knitr::include_graphics("./images/data_bad_indef.png")
+```
 
 ---
 
@@ -67,7 +76,9 @@ Xiong, two White Hmong speakers who were raised in Wisconsin.
 
 ## Definites
 
-**classifier denotations???**
+```{r, echo=FALSE}
+knitr::include_graphics("./images/clf_denotations.png")
+```
 
 **what do these mean???**
 
@@ -77,7 +88,9 @@ Xiong, two White Hmong speakers who were raised in Wisconsin.
 
 ## Definites 
 
-**iota definition???**
+```{r, echo=FALSE}
+knitr::include_graphics("./images/iota.png")
+```
 
 **what's it do???**
 
@@ -87,7 +100,9 @@ Xiong, two White Hmong speakers who were raised in Wisconsin.
 
 ## Indefinites
 
-**ib denotation???**
+```{r, echo=FALSE}
+knitr::include_graphics("./images/ib.png")
+```
 
 **what's this mean???**
 

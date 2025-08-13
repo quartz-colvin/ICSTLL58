@@ -1,0 +1,169 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate}
+\usepackage{xcolor}
+ \usepackage{qtree}
+\usepackage{fge}
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\usepackage{amsmath,amsthm, amssymb, latexsym}
+\usepackage{graphicx, fancyhdr}
+ \usepackage{stmaryrd}
+ \usepackage{mathrsfs}
+\usepackage{soul}
+ \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{ot-tableau}
+\usepackage{multicol}
+
+\usepackage{tipa}
+\usepackage{tipx}
+
+\usepackage[sc]{mathpazo}
+\usepackage[scaled=0.95]{helvet}
+\usepackage{courier}
+\usepackage{tgpagella}
+ 
+\usepackage{gb4e}
+
+
+
+\begin{document}
+
+\section{Data}
+
+\begin{exe}
+\ex \gll Keng pom tus aub \\
+	Keng see \textsc{Clf.sg} dog \\
+\glt \textit{"Keng sees the dog."}
+\end{exe}
+
+\begin{exe}
+\ex \gll Keng pom cov aub \\
+	Keng see \textsc{Clf.pl} dog \\
+\glt \textit{"Keng sees the dogs."} (all of the relevant dogs)
+\end{exe}
+
+\begin{exe}
+\ex \gll Keng pom ib tus aub \\
+	Keng see \textsc{Indef} \textsc{Clf.sg} dog \\
+\glt \textit{"Keng sees a/some dog."} (non-specific)
+\end{exe}
+
+\begin{exe}
+\ex \gll Keng pom ib cov aub \\
+	Keng see \textsc{Indef} \textsc{Clf.pl} dog \\
+\glt \textit{"Keng sees some dogs."}
+\end{exe}
+
+\begin{exe}
+\ex \gll \textbf{*}Keng pom ib aub \\
+	Keng sees \textsc{Indef} dog \\
+\glt \textit{"Keng sees a/some dog."}
+\end{exe}
+
+
+
+
+\section{Proposal}
+
+\subsection{Definites}
+
+
+\begin{exe}
+\ex $\llbracket$ \textit{tus} $\rrbracket$ = $\lambda P.\lambda x.[P(x) \land AT(x)]$
+\end{exe}
+
+\begin{exe}
+\ex $\llbracket$ \textit{cov} $\rrbracket$ = $\lambda P.\lambda x.[P(x)]$
+\end{exe}
+
+\begin{exe}
+\ex $\llbracket$ $\iota$ $\rrbracket$ = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$
+\end{exe}
+
+\subsection{Definite compositions}
+
+\begin{exe}
+\ex Singular definite structure \\\small\Tree [.DP_{e} [.D^0_{???} $\iota$ ] [.ClfP_{???} [.Clf^0_{???} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\end{exe}
+
+\begin{exe}
+\ex Composition for \textit{tus aub} \begin{xlist}
+\ex Clf^0 = $\lambda P.\lambda x[P(x) \land AT(x)]$
+\ex ClfP = $\lambda x[\textsc{dog}(x) \land AT(x)]$
+\ex D^0 = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$
+\ex \textbf{DP} = $\iota x[\textsc{dog}(x) \land AT(x) \land \forall y[\textsc{dog}(y) \land AT(y) \forall y \leq x ]]$ \\
+\underline{defined iff:} $\exists x[\textsc{dog}(x) \land AT(x) \land \forall y[\textsc{dog}(y) \land AT(y) \rightarrow y \leq x ]]$
+\end{xlist}
+\end{exe}
+
+
+
+\begin{exe}
+\ex Plural definite structure \\\small\Tree [.DP_{e} [.D^0_{???} $\iota$ ] [.ClfP_{???} [.Clf^0_{???} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\end{exe}
+
+\begin{exe}
+\ex Composition for \textit{cov aub} \begin{xlist} 
+\ex Clf^0 = $\lambda P.\lambda x.P(x)$
+\ex ClfP = $\lambda x.\textsc{dog}(x)$
+\ex D^0 = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$
+\ex \textbf{DP} = $\iota x[\textsc{dog}(x) \land \forall y[\textsc{dog}(y) \rightarrow y \leq x ]]$ \\
+\underline{defined iff:} $\exists x[\textsc{dog}(x) \land \forall y[\textsc{dog}(y) \rightarrow y \leq x ]]$
+\end{xlist}
+\end{exe}
+
+
+
+\subsection{Indefinites}
+
+\begin{exe}
+\ex $\llbracket$ \textit{ib} $\rrbracket^g = \lambda P_{\langle e,t \rangle}.f_{cf}(\lambda y.P(y) = 1)$
+\end{exe}
+
+\subsection{Contexts}
+
+\begin{exe}
+\ex \textit{AUB}_C: \{Apollo, Mars, Copper\}\begin{xlist}
+	\ex\label{tusaub} \textit{tus aub} = A 
+	\ex\label{ibtusaub} \textit{ib tus aub} = A or M or C 
+\end{xlist}
+\end{exe}
+
+
+\begin{exe}
+\ex\label{covselection} \textit{AUB}_C: \{Apollo, Mars, Copper\}\begin{xlist}
+	\ex\label{covaub} \textit{cov aub} = AMC 
+	\ex\label{ibcovaub} \textit{ib cov aub} = AMC or AM or AC or CM or A or M or C
+	\ex\label{antipresup} \textit{ib cov aub} = AM or AC or CM \hspace{1cm} \textbf{(via anti-presupposition)}
+\end{xlist}
+\end{exe}
+
+
+\subsection{Indefinites composition}
+
+\begin{exe}
+\ex Singular indefinite structure \\\small\Tree [.DP_{e} [.D^0_{???} \textit{ib} ] [.ClfP_{???} [.Clf^0_{???} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\end{exe}
+
+
+\textcolor{red}{insert sg definite compositional steps}
+
+
+
+\begin{exe}
+\ex Plural indefinite structure \\\small\Tree [.DP_{e} [.D^0_{???} \textit{ib} ] [.ClfP_{???} [.Clf^0_{???} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\end{exe}
+
+\textcolor{red}{insert pl definite compositional steps}
+
+
+
+
+
+
+\end{document}
