@@ -74,11 +74,11 @@
 
 
 \begin{exe}
-\ex $\llbracket$ \textit{tus} $\rrbracket$ = $\lambda P.\lambda x.[P(x) \land AT(x)]$
+\ex $\llbracket$ \textit{tus} $\rrbracket$^{M, g} = $\lambda P\lambda x.P(x) \land AT(x)$
 \end{exe}
 
 \begin{exe}
-\ex $\llbracket$ \textit{cov} $\rrbracket$ = $\lambda P.\lambda x.[P(x)]$
+\ex $\llbracket$ \textit{cov} $\rrbracket$^{M, g} = $\lambda P\lambda x.P(x)$
 \end{exe}
 
 \begin{exe}
@@ -88,15 +88,24 @@
 \subsection{Definite compositions}
 
 \begin{exe}
-\ex Singular definite structure \\\small\Tree [.DP_{e} [.D^0_{???} $\iota$ ] [.ClfP_{???} [.Clf^0_{???} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\ex Singular definite structure \\\Tree [.DP_{e} [.D^0_{\langle\langle e,t \rangle, e \rangle} $\iota$ ] [.ClfP_{\langle e,t \rangle} [.Clf^0_{\langle e, \langle e,t \rangle\rangle} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
 \end{exe}
 
+\pagebreak
 \begin{exe}
 \ex Composition for \textit{tus aub} \begin{xlist}
-\ex Clf^0 = $\lambda P.\lambda x[P(x) \land AT(x)]$
-\ex ClfP = $\lambda x[\textsc{dog}(x) \land AT(x)]$
-\ex D^0 = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$
-\ex \textbf{DP} = $\iota x[\textsc{dog}(x) \land AT(x) \land \forall y[\textsc{dog}(y) \land AT(y) \forall y \leq x ]]$ \\
+\ex $\llbracket$ \textit{tus} $\rrbracket$^{M,g} = $\lambda P\lambda x.P(x) \land AT(x)$ ~\hfill \textbf{(Lexical)}
+\ex $\llbracket$ \textit{aub} $\rrbracket$^{M,g} = $\lambda x.\textsc{dog}(x)$ ~\hfill \textbf{(Lexical)}
+\ex ClfP = $\llbracket$ Clf $(\llbracket$ NP $\rrbracket) \rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+ = $\llbracket tus (\llbracket aub \rrbracket) \rrbracket$\\
+ = [$\lambda P\lambda x.P(x) \land AT(x)$] \textbf{($\lambda x.\textsc{dog}(x)$)} \\
+ = $\lambda x.\textsc{dog}(x) \land AT(x)$ 
+\ex $\llbracket$ $\iota$ $\rrbracket$ = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$ ~\hfill \textbf{(Lexical)}
+\ex DP = $\llbracket$ D $(\llbracket$ ClfP $\rrbracket) \rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+ = $\llbracket$ $\iota$ $(\llbracket$ \textit{tus aub} $\rrbracket) \rrbracket$\\
+ = $\textbf{$\lambda P$}: \exists x[\textbf{P}(x) \land \forall y[\textbf{P}(y) \rightarrow y \leq x]].\iota x[\textbf{P}(x) \land \forall y[\textbf{P}(y) \rightarrow y \leq x]]$ \\\hspace{1cm} \textbf{$(\lambda x.\textsc{dog}(x) \land AT(x))$}\\
+ = $\exists x[\textbf{$(\lambda x.\textsc{dog}(x) \land AT(x))$}(x) \land \forall y[\textbf{$(\lambda x.\textsc{dog}(x) \land AT(x))$}(y) \rightarrow y \leq x]]$\\$.\iota x[\textbf{$(\lambda x.\textsc{dog}(x) \land AT(x))$}(x) \land \forall y[\textbf{$(\lambda x.\textsc{dog}(x) \land AT(x))$}(y) \rightarrow y \leq x]]$\\
+\textbf{=} $\iota x[\textsc{dog}(x) \land AT(x) \land \forall y[\textsc{dog}(y) \land AT(y) \forall y \leq x ]]$ \\
 \underline{defined iff:} $\exists x[\textsc{dog}(x) \land AT(x) \land \forall y[\textsc{dog}(y) \land AT(y) \rightarrow y \leq x ]]$
 \end{xlist}
 \end{exe}
@@ -104,25 +113,33 @@
 
 
 \begin{exe}
-\ex Plural definite structure \\\small\Tree [.DP_{e} [.D^0_{???} $\iota$ ] [.ClfP_{???} [.Clf^0_{???} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\ex Plural definite structure \\\Tree [.DP_{e} [.D^0_{\langle\langle e,t \rangle, e \rangle} $\iota$ ] [.ClfP_{\langle e,t \rangle} [.Clf^0_{\langle e, \langle e,t \rangle\rangle} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
 \end{exe}
 
 \begin{exe}
 \ex Composition for \textit{cov aub} \begin{xlist} 
-\ex Clf^0 = $\lambda P.\lambda x.P(x)$
-\ex ClfP = $\lambda x.\textsc{dog}(x)$
-\ex D^0 = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$
-\ex \textbf{DP} = $\iota x[\textsc{dog}(x) \land \forall y[\textsc{dog}(y) \rightarrow y \leq x ]]$ \\
+\ex $\llbracket$ \textit{cov} $\rrbracket$^{M,g} = $\lambda P\lambda x.P(x)$ ~\hfill \textbf{(Lexical)}
+\ex $\llbracket$ \textit{aub} $\rrbracket$^{M,g} = $\lambda x.\textsc{dog}(x)$ ~\hfill \textbf{(Lexical)}
+\ex ClfP = $\llbracket$ Clf $(\llbracket$ NP $\rrbracket) \rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+ = $\llbracket cov (\llbracket aub \rrbracket) \rrbracket$\\
+ = [$\lambda P\lambda x.P(x)$] \textbf{($\lambda x.\textsc{dog}(x)$)} \\
+ = $\lambda x.\textsc{dog}(x)$ 
+\ex $\llbracket$ $\iota$ $\rrbracket$ = $\lambda P: \exists x[P(x) \land \forall y[P(y) \rightarrow y \leq x]].\iota x[P(x) \land \forall y[P(y) \rightarrow y \leq x]]$ ~\hfill \textbf{(Lexical)}
+\ex DP = $\llbracket$ D $(\llbracket$ ClfP $\rrbracket) \rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+ = $\llbracket$ $\iota$ $(\llbracket$ \textit{cov aub} $\rrbracket) \rrbracket$\\
+ = $\textbf{$\lambda P$}: \exists x[\textbf{P}(x) \land \forall y[\textbf{P}(y) \rightarrow y \leq x]].\iota x[\textbf{P}(x) \land \forall y[\textbf{P}(y) \rightarrow y \leq x]]$ \\\hspace{1cm} \textbf{$(\lambda x.\textsc{dog}(x))$}\\
+ = $\exists x[\textbf{$(\lambda x.\textsc{dog}(x))$}(x) \land \forall y[\textbf{$(\lambda x.\textsc{dog}(x))$}(y) \rightarrow y \leq x]]$\\$.\iota x[\textbf{$(\lambda x.\textsc{dog}(x))$}(x) \land \forall y[\textbf{$(\lambda x.\textsc{dog}(x))$}(y) \rightarrow y \leq x]]$\\
+\textbf{=} $\iota x[\textsc{dog}(x) \land \forall y[\textsc{dog}(y) \rightarrow y \leq x ]]$ \\
 \underline{defined iff:} $\exists x[\textsc{dog}(x) \land \forall y[\textsc{dog}(y) \rightarrow y \leq x ]]$
 \end{xlist}
 \end{exe}
 
 
-
+\pagebreak
 \subsection{Indefinites}
 
 \begin{exe}
-\ex $\llbracket$ \textit{ib} $\rrbracket^g = \lambda P_{\langle e,t \rangle}.f_{cf}(\lambda y.P(y) = 1)$
+\ex $\llbracket$ \textit{ib} $\rrbracket$^{M, g} = $\lambda P_{\langle e,t \rangle}.f_{cf}(\lambda y.P(y) = 1)$
 \end{exe}
 
 \subsection{Contexts}
@@ -147,19 +164,51 @@
 \subsection{Indefinites composition}
 
 \begin{exe}
-\ex Singular indefinite structure \\\small\Tree [.DP_{e} [.D^0_{???} \textit{ib} ] [.ClfP_{???} [.Clf^0_{???} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\ex Singular indefinite structure  \\\Tree [.DP_{\langle e,t \rangle} [.D^0_{\langle\langle e,t \rangle, \langle e,t \rangle\rangle} \textit{ib} ] [.ClfP_{\langle e,t \rangle} [.Clf^0_{\langle e, \langle e,t \rangle\rangle} \textit{tus} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
 \end{exe}
-
-
-\textcolor{red}{insert sg definite compositional steps}
-
-
 
 \begin{exe}
-\ex Plural indefinite structure \\\small\Tree [.DP_{e} [.D^0_{???} \textit{ib} ] [.ClfP_{???} [.Clf^0_{???} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\ex Composition for \textit{ib tus aub} \begin{xlist}
+\ex $\llbracket$ \textit{tus} $\rrbracket$^{M,g} = $\lambda P\lambda x.P(x) \land AT(x)$ ~\hfill \textbf{(Lexical)}
+\ex $\llbracket$ \textit{aub} $\rrbracket$^{M,g} = $\lambda x.\textsc{dog}(x)$ ~\hfill \textbf{(Lexical)}
+\ex ClfP = $\llbracket$ Clf ($\llbracket$ NP $\rrbracket$)$\rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+= $\llbracket$ \textit{tus} ($\llbracket$ \textit{aub} $\rrbracket$)$\rrbracket$\\
+= [$\lambda P\lambda x.P(x) \land AT(x)$] ($\lambda x.\textsc{dog}(x)$)\\
+= $\lambda x.\textsc{dog}(x) \land AT(x)$
+
+\ex $\llbracket$ \textit{ib} $\rrbracket$^{M,g} = $\lambda P.f_{cf}(\lambda y.P(y) = 1)$ ~\hfill \textbf{(Lexical)}
+\ex DP = $\llbracket$ D ($\llbracket$ ClfP $\rrbracket$)$\rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+= $\llbracket$ \textit{ib} ($\llbracket$ \textit{tus aub} $\rrbracket$)$\rrbracket$\\
+= [$\lambda P.f_{cf}(\lambda y.P(y) = 1)$] ($\lambda x.\textsc{dog}(x) \land AT(x)$)\\
+= $f_{cf}(\lambda y.(\lambda x.\textsc{dog}(x) \land AT(x))(y) = 1)$\\
+= $f_{cf}.(\lambda y.\textsc{dog}(y) \land AT(y) = 1)$
+\end{xlist}
 \end{exe}
 
-\textcolor{red}{insert pl definite compositional steps}
+
+\pagebreak
+\begin{exe}
+\ex Plural indefinite structure \\\Tree [.DP_{\langle e,t \rangle} [.D^0_{\langle\langle e,t \rangle, \langle e,t \rangle\rangle} \textit{ib} ] [.ClfP_{\langle e,t \rangle} [.Clf^0_{\langle e, \langle e,t \rangle\rangle} \textit{cov} ] [.NP_{e} [.N^0_{e} \textit{aub} ]]]]
+\end{exe}
+
+\begin{exe}
+\ex Composition for \textit{ib cov aub} \begin{xlist}
+\ex $\llbracket$ \textit{cov} $\rrbracket$^{M,g} = $\lambda P\lambda x.P(x)$ ~\hfill \textbf{(Lexical)}
+\ex $\llbracket$ \textit{aub} $\rrbracket$^{M,g} = $\lambda x.\textsc{dog}(x)$ ~\hfill \textbf{(Lexical)}
+\ex ClfP = $\llbracket$ Clf ($\llbracket$ NP $\rrbracket$)$\rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+= $\llbracket$ \textit{cov} ($\llbracket$ \textit{aub} $\rrbracket$)$\rrbracket$\\
+= [$\lambda P\lambda x.P(x)$] ($\lambda x.\textsc{dog}(x)$)\\
+= $\lambda x.\textsc{dog}(x)$
+
+\ex $\llbracket$ \textit{ib} $\rrbracket$^{M,g} = $\lambda P.f_{cf}(\lambda y.P(y) = 1)$ ~\hfill \textbf{(Lexical)}
+\ex DP = $\llbracket$ D ($\llbracket$ ClfP $\rrbracket$)$\rrbracket$ ~\hfill \textbf{(FA+$\beta$-reduction)}\\
+= $\llbracket$ \textit{ib} ($\llbracket$ \textit{cov aub} $\rrbracket$)$\rrbracket$\\
+= [$\lambda P.f_{cf}(\lambda y.P(y) = 1)$] ($\lambda x.\textsc{dog}(x)$)\\
+= $f_{cf}(\lambda y.(\lambda x.\textsc{dog}(x))(y) = 1)$\\
+= $f_{cf}.(\lambda y.\textsc{dog}(y) = 1)$
+\end{xlist}
+\end{exe}
+
 
 
 
