@@ -20,7 +20,7 @@ output:
 
 - Our discussion includes the indefinite article *ib* and two common classifiers (*tus* and *cov*).
 
----
+--
 
 ## Research questions
 
@@ -30,9 +30,25 @@ output:
 
 ---
 
-## Roadmap 
+# Introduction
 
-**FILL IN???**
+## Outline 
+
+1. Introduction 
+
+2. Hmong Data
+
+3. Proposal: definites
+
+4. Proposal: indefinites
+
+5. Conclusion
+
+---
+
+class: center, middle
+
+# Hmong Data
 
 ---
 
@@ -41,9 +57,9 @@ output:
 ## Demographics
 
 - All of my data and discussion are based on elicitation on Zoom with Mai-Ying Xiong and in person with Keng
-Xiong, two White Hmong speakers who were raised in Wisconsin. 
+Xiong, two White Hmong speakers who were raised in Wisconsin (WI). 
 
-- Keng was born in Wisconsin and Ying immigrated to the US at age 4.
+- Keng was born in WI and Ying immigrated to the US at age 4.
 
 ---
 
@@ -51,7 +67,7 @@ Xiong, two White Hmong speakers who were raised in Wisconsin.
 
 ## Definites (Bare classifier phrases)
 
-```{r, echo=FALSE}
+```{r, out.width="60%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_bare_clfp.png")
 ```
 
@@ -61,15 +77,23 @@ knitr::include_graphics("./images/data_bare_clfp.png")
 
 ## Indefinites 
 
-```{r, echo=FALSE}
+```{r, out.width="55%", out.height="55%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_indefinites.png")
 ```
 
+
 --
 
-```{r, echo=FALSE}
+```{r, out.width="40%", out.height="25%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_bad_indef.png")
 ```
+
+
+---
+
+class: center, middle
+
+# Proposal: definites
 
 ---
 
@@ -77,61 +101,128 @@ knitr::include_graphics("./images/data_bad_indef.png")
 
 ## Definites
 
-```{r, echo=FALSE}
+```{r, out.width="55%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/clf_denotations.png")
 ```
 
-**what do these mean???**
+--
 
-**takes type e kind and returns a predicate of type e,t???**
+**Classifiers:**
+
+- both take a bare noun as their argument
+
+--
+
+- *tus* requires that the NP's referent be "atomic" ("AT(x)") but *cov* has no atomicity requirement
+
+--
+
+- when they combine with an NP (bare noun, type *e*), they output a predicate type (⟨*e,t*⟩)
+
 
 ---
 
+# Proposal
+
 ## Definites 
 
-```{r, echo=FALSE}
+```{r, out.width="95%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/iota.png")
 ```
 
 **what's it do???**
 
-**show mini definite DP trees???**
+---
+
+# Proposal
+
+## Definites
+
+.pull-left[
+```{r, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/tree_tus_aub.png")
+```
+]
+
+
+.pull-right[
+```{r, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/tree_cov_aub.png")
+```
+]
 
 ---
 
+# Proposal
+
+## Definites
+
+```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/tus_aub_composition.png")
+```
+
+---
+
+# Proposal
+
+## Definites 
+
+```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/cov_aub_composition.png")
+```
+
+---
+
+class: center, middle
+
+# Proposal: Indefinites
+
+---
+
+# Proposal
+
 ## Indefinites
 
-```{r, echo=FALSE}
+```{r, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/ib.png")
 ```
 
 **what's this mean???**
 
-**what is the type???**
 
 ---
 
+# Proposal
+
 ## Contexts 
 
-**show tus aub and ib tus aub???**
+```{r, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/sg_contexts.png")
+```
 
 **how are the referents determined in both sentences???**
 
 ---
 
+# Proposal 
+
 ## Contexts 
 
-**show cov aub and ib cov aub???**
-
+```{r, out.width="75%", out.height="auto", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/pl_contexts.png")
+```
 --
-
-**show antipresup options???**
+```{r, out.width="90%", out.height="auto", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/antipresupposition.png")
+```
 
 --
 
 **how are the referents determined???**
 
 ---
+
+# Proposal
 
 ### Antipresupposition
 
