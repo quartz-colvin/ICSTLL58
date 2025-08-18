@@ -248,8 +248,20 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yih
 
 class: center, middle
 
-# Thanks!
+# Thank you! Questions? Comments?
 
-# Cov aub! 
+--
 
-**FILL IN???**
+# (Cov aub!) 
+
+
+.pull-center[
+```{r, out.width="30%", out.height="25%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/apollo.jpg")
+
+knitr::include_graphics("./images/copper.jpeg")
+
+knitr::include_graphics("./images/mars.jpg")
+
+```
+]
