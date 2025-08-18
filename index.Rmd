@@ -252,7 +252,7 @@ class: center, middle
 
 --
 
-# (Cov aub!) 
+# *(Cov aub!)* 
 
 
 .pull-center[

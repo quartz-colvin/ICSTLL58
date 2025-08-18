@@ -3,7 +3,7 @@
     "path": "~/GitHub/ICSTLL58/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "359797976",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1755295022115.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "132,17",
-        "scrollLine": "123"
+        "cursorPosition": "186,42",
+        "scrollLine": "176"
     },
     "folds": "",
-    "lastKnownWriteTime": 1755368629,
+    "lastKnownWriteTime": 1755543109,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1755368629088,
+    "last_content_update": 1755543109081,
     "read_only": false,
     "read_only_alternatives": []
 }
