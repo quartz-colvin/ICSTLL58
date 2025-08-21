@@ -136,7 +136,7 @@ knitr::include_graphics("./images/iota.png")
 
 # Proposal
 
-## Definites
+## Definites (structures)
 
 .pull-left[
 ```{r, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
@@ -155,7 +155,7 @@ knitr::include_graphics("./images/tree_cov_aub.png")
 
 # Proposal
 
-## Definites
+## Definites (composition)
 
 ```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tus_aub_composition.png")
@@ -165,7 +165,7 @@ knitr::include_graphics("./images/tus_aub_composition.png")
 
 # Proposal
 
-## Definites 
+## Definites (composition)
 
 ```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/cov_aub_composition.png")
@@ -187,7 +187,17 @@ class: center, middle
 knitr::include_graphics("./images/ib.png")
 ```
 
-**what's this mean???**
+--
+
+**What does this mean?**
+
+- *ib* takes a predicate of type ⟨*e,t*⟩ as an argument 
+
+- outputs another predicate of type ⟨*e,t*⟩
+
+--
+
+- then the choice function ***???***
 
 
 ---
@@ -200,7 +210,21 @@ knitr::include_graphics("./images/ib.png")
 knitr::include_graphics("./images/sg_contexts.png")
 ```
 
-**how are the referents determined in both sentences???**
+--
+
+**How are the referents for each phrase determined in this context?**
+
+--
+
+- (14a) is a definite phrase, so its reference is typically determined by 1) discourse relevance of a certain dog in the context, 2) pointing at a specific dog
+
+--
+
+- (14b) is truly so non-specific that each dog in the context is an equally likely referent. if a speaker meant to refer to one of the three dogs specifically, they would say *tus aub* instead of *ib tus aub*
+
+--
+
+- the choice function analysis correctly captures the random referent in the context
 
 ---
 
@@ -218,7 +242,17 @@ knitr::include_graphics("./images/antipresupposition.png")
 
 --
 
-**how are the referents determined???**
+**How are the referents for each phrase determined in this context?**
+
+--
+
+- (15a) is a definite phrase, so the iota operator requires it to refer to the full group in the context
+
+--
+
+- (15b) shows that *ib cov aub* can semantically refer to any atomic or nonatomic entity in the context. **BUT**, because of _antipresupposition_, the options in (15c) are the only pragmatically sound referents in the context for *ib cov aub*  
+
+
 
 ---
 
@@ -226,13 +260,65 @@ knitr::include_graphics("./images/antipresupposition.png")
 
 ### Antipresupposition
 
-**FILL IN???**
+**What is antipresupposition?**
 
+- ***define???***
+
+
+---
+
+# Proposal
+
+## Indefinites (structures)
+
+.pull-left[
+```{r, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/tree_ib_tus_aub.png")
+```
+]
+
+.pull-right[
+```{r, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/tree_ib_cov_aub.png")
+```
+]
+
+---
+
+# Proposal 
+
+## Indefinites (composition)
+
+```{r, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/ib_tus_aub_composition.png")
+```
+
+---
+
+# Proposal
+
+## Indefinites (composition)
+
+```{r, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
+knitr::include_graphics("./images/ib_cov_aub_composition.png")
+```
 ---
 
 # Conclusion 
 
-**FILL IN???**
+- analyzing *ib* as a choice function correctly captures how different referents are determined in singular and plural classifiers
+
+--
+
+- singular indefinite phrases (*ib tus NP*) are highly non-specific and thus can refer to any atomic entity in the context 
+
+--
+
+- plural indefinite phrases (*ib cov NP*) are also non-specific, but semantically can refer to any atomic or non-atomic entity in the context
+
+--
+
+- along with the concept of antipresupposition, a choice functional analysis correctly predicts that *ib cov NP* can only refer to non-maximal and non-atomic entities in the context
 
 ---
 
@@ -252,7 +338,7 @@ class: center, middle
 
 --
 
-# (Cov aub!) 
+# *(Cov aub!)* 
 
 
 .pull-center[

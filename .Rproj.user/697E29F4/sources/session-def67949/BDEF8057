@@ -3,7 +3,7 @@
     "path": "C:/Users/court/OneDrive/Desktop/ICSTLL58/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "3755503253",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1753881664797.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "240,14",
-        "scrollLine": "231"
+        "cursorPosition": "240,3",
+        "scrollLine": "227"
     },
     "folds": "",
-    "lastKnownWriteTime": 1755541589,
+    "lastKnownWriteTime": 1755783508,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1755541589773,
+    "last_content_update": 1755783508,
     "read_only": false,
     "read_only_alternatives": []
 }
