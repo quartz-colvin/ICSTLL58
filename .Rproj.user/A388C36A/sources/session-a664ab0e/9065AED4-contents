@@ -12,6 +12,8 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      bibliography:  bibliography.bib
+
 ---
 
 # Introduction
@@ -38,9 +40,9 @@ output:
 
 2. Hmong Data
 
-3. Proposal: definites
+3. Proposal: bare classifier phrases
 
-4. Proposal: indefinites
+4. Proposal: indefinite phrases
 
 5. Conclusion
 
@@ -54,12 +56,17 @@ class: center, middle
 
 # Data
 
-## Demographics
+## Speaker information
 
-- All of my data and discussion are based on elicitation on Zoom with Mai-Ying Xiong and in person with Keng
-Xiong, two White Hmong speakers who were raised in Wisconsin (WI). 
+- All of my data and discussion are based on elicitation on Zoom with **Ying** and in person with **Keng**, two White Hmong speakers who were raised in Wisconsin (WI). 
+
+--
 
 - Keng was born in WI and Ying immigrated to the US at age 4.
+
+--
+
+- Also they're siblings
 
 ---
 
@@ -71,6 +78,13 @@ Xiong, two White Hmong speakers who were raised in Wisconsin (WI).
 knitr::include_graphics("./images/data_bare_clfp.png")
 ```
 
+--
+
+(1) ***tus aub*** can only refer to 1 unique, specific dog in the relevant context
+
+(2) ***cov aub*** can only refer to the full group of dogs in the context
+
+
 ---
 
 # Data
@@ -81,19 +95,30 @@ knitr::include_graphics("./images/data_bare_clfp.png")
 knitr::include_graphics("./images/data_indefinites.png")
 ```
 
-
 --
+
+(3) ***ib tus aub*** can refer to any one of the dogs in the context
+
+(4) ***ib cov aub*** can refer to any subgroup of the dogs in the context
+
+---
+
+# Data
+
+## Indefinites
 
 ```{r, out.width="40%", out.height="25%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_bad_indef.png")
 ```
+
+(5) ***ib*** requires a classifier phrase
 
 
 ---
 
 class: center, middle
 
-# Proposal: definites
+# Proposal: bare classifier phrases (definites)
 
 ---
 
@@ -130,7 +155,21 @@ knitr::include_graphics("./images/clf_denotations.png")
 knitr::include_graphics("./images/iota.png")
 ```
 
-**what's it do???**
+**What do I need to know about this operator?**
+
+--
+
+- ι is roughly equivalent to a definite article like *the* 
+
+- as a null equivalent to *the*, *the dogs* would pick out the largest plurality of dogs (Chierchia 1997)
+
+--
+
+**For Hmong,**
+
+- this ι operator gives us the unique definite reading for bare classifier phrases with *tus*
+
+- and it gives us a maximal reading in bare classifier phrases with *cov*
 
 ---
 
@@ -175,7 +214,7 @@ knitr::include_graphics("./images/cov_aub_composition.png")
 
 class: center, middle
 
-# Proposal: Indefinites
+# Proposal: Indefinite phrases
 
 ---
 
@@ -193,11 +232,11 @@ knitr::include_graphics("./images/ib.png")
 
 - *ib* takes a predicate of type ⟨*e,t*⟩ as an argument 
 
-- outputs another predicate of type ⟨*e,t*⟩
+- it outputs another predicate of type ⟨*e,t*⟩
 
 --
 
-- then the choice function ***???***
+- the choice function applies to a grouping of entities and arbitrarily selects one of the entities as its referent (Winter 1997)
 
 
 ---
@@ -246,11 +285,11 @@ knitr::include_graphics("./images/antipresupposition.png")
 
 --
 
-- (15a) is a definite phrase, so the iota operator requires it to refer to the full group in the context
+- (15a) is a definite phrase, so the ι operator requires it to refer to the full group in the context
 
 --
 
-- (15b) shows that *ib cov aub* can semantically refer to any atomic or nonatomic entity in the context. **BUT**, because of _antipresupposition_, the options in (15c) are the only pragmatically sound referents in the context for *ib cov aub*  
+- (15b) shows that *ib cov aub* can semantically refer to any atomic or non-atomic entity in the context. **BUT**, because of _antipresupposition_, the options in (15c) are the only pragmatically sound referents in the context for *ib cov aub*  
 
 
 
@@ -260,9 +299,23 @@ knitr::include_graphics("./images/antipresupposition.png")
 
 ### Antipresupposition
 
-**What is antipresupposition?**
+**What is it?**
 
-- ***define???***
+--
+
+Antipresupposition ***"imposes the condition that the interlocutors not take the truth of a certain proposition for granted"*** (Percus 2006)
+
+--
+
+- for plural indefinites, the choice function does not select the largest entity, otherwise, ι would be the determiner chosen for the utterance instead of *ib* 
+
+--
+
+- the choice function also does not select an atomic entity, otherwise, the classifier *tus* would have been chosen instead of *cov*
+
+--
+
+- **thus,** antipresupposition yields the non-singular and non-maximal entities as the only pragmatically sound options when *ib cov aub* is uttered
 
 
 ---
@@ -306,15 +359,15 @@ knitr::include_graphics("./images/ib_cov_aub_composition.png")
 
 # Conclusion 
 
-- analyzing *ib* as a choice function correctly captures how different referents are determined in singular and plural classifiers
+- analyzing *ib* as a choice function correctly captures how different referents are determined with singular and plural classifiers
 
 --
 
-- singular indefinite phrases (*ib tus NP*) are highly non-specific and thus can refer to any atomic entity in the context 
+- singular indefinite phrases (***ib tus NP***) are highly non-specific and thus can refer to any atomic entity in the context 
 
 --
 
-- plural indefinite phrases (*ib cov NP*) are also non-specific, but semantically can refer to any atomic or non-atomic entity in the context
+- plural indefinite phrases (***ib cov NP***) are also non-specific, but semantically can refer to any atomic or non-atomic entity in the context
 
 --
 
@@ -322,13 +375,30 @@ knitr::include_graphics("./images/ib_cov_aub_composition.png")
 
 ---
 
-## References 
+# Selected references
 
-**FILL IN???**
+Chierchia, Gennaro. 1998. Reference to kinds across language. Natural Language Semantics
+6:339–405.
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+Chierchia, Gennaro. 1997. Partitives, Reference to Kinds and Semantic Variation. SALT VII, 73-98.
+Cornell University. Ithaca, NY.
+
+
+Elbourne, Paul D. 2005. On the acquisition of Principle B. Linguistic Inquiry 36:333–366
+
+
+Jenks, Peter. 2018. Articulated definiteness without articles. Linguistic Inquiry 49:501–536.
+
+
+Percus, O. 2006. "Antipresuppositions." In A. Ueyama(ed.), Theoretical and Empirical Studies of
+Reference and Anaphora: Toward the establishment of generative grammar as an empirical science, Report of the
+Grant-in-Aid for Scientific Research (B), Project No. 15320052, Japan Society for the Promotion of Science, 52-73. 
+
+
+Winter, Y. 1997. Choice Functions and the Scopal Semantics of Indefinites. Linguistics and Philosophy
+20, 399–467. https://doi.org/10.1023/A:1005354323136
+ 
 
 ---
 
