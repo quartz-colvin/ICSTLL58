@@ -64,8 +64,6 @@ class: center, middle
 
 - Keng was born in WI and Ying immigrated to the US at age 4.
 
---
-
 - Also they're siblings
 
 ---
@@ -74,7 +72,7 @@ class: center, middle
 
 ## Definites (Bare classifier phrases)
 
-```{r, out.width="60%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="60%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_bare_clfp.png")
 ```
 
@@ -91,7 +89,7 @@ knitr::include_graphics("./images/data_bare_clfp.png")
 
 ## Indefinites 
 
-```{r, out.width="55%", out.height="55%", dpi=900, echo=FALSE}
+```{r, fig.retina=1, out.width="55%", out.height="55%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_indefinites.png")
 ```
 
@@ -107,7 +105,7 @@ knitr::include_graphics("./images/data_indefinites.png")
 
 ## Indefinites
 
-```{r, out.width="40%", out.height="25%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="40%", out.height="25%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/data_bad_indef.png")
 ```
 
@@ -126,7 +124,7 @@ class: center, middle
 
 ## Definites
 
-```{r, out.width="55%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="55%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/clf_denotations.png")
 ```
 
@@ -151,7 +149,7 @@ knitr::include_graphics("./images/clf_denotations.png")
 
 ## Definites 
 
-```{r, out.width="95%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="95%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/iota.png")
 ```
 
@@ -178,14 +176,14 @@ knitr::include_graphics("./images/iota.png")
 ## Definites (structures)
 
 .pull-left[
-```{r, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tree_tus_aub.png")
 ```
 ]
 
 
 .pull-right[
-```{r, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="100%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tree_cov_aub.png")
 ```
 ]
@@ -196,7 +194,7 @@ knitr::include_graphics("./images/tree_cov_aub.png")
 
 ## Definites (composition)
 
-```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tus_aub_composition.png")
 ```
 
@@ -206,7 +204,7 @@ knitr::include_graphics("./images/tus_aub_composition.png")
 
 ## Definites (composition)
 
-```{r, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="120%", out.height="120%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/cov_aub_composition.png")
 ```
 
@@ -222,7 +220,7 @@ class: center, middle
 
 ## Indefinites
 
-```{r, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/ib.png")
 ```
 
@@ -245,7 +243,7 @@ knitr::include_graphics("./images/ib.png")
 
 ## Contexts 
 
-```{r, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="50%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/sg_contexts.png")
 ```
 
@@ -271,11 +269,11 @@ knitr::include_graphics("./images/sg_contexts.png")
 
 ## Contexts 
 
-```{r, out.width="75%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="75%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/pl_contexts.png")
 ```
 --
-```{r, out.width="90%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="90%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/antipresupposition.png")
 ```
 
@@ -325,13 +323,13 @@ Antipresupposition ***"imposes the condition that the interlocutors not take the
 ## Indefinites (structures)
 
 .pull-left[
-```{r, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tree_ib_tus_aub.png")
 ```
 ]
 
 .pull-right[
-```{r, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="100%", out.height="100%", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/tree_ib_cov_aub.png")
 ```
 ]
@@ -342,7 +340,7 @@ knitr::include_graphics("./images/tree_ib_cov_aub.png")
 
 ## Indefinites (composition)
 
-```{r, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/ib_tus_aub_composition.png")
 ```
 
@@ -352,7 +350,7 @@ knitr::include_graphics("./images/ib_tus_aub_composition.png")
 
 ## Indefinites (composition)
 
-```{r, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
+```{r, fig.retina=2, out.width="120%", out.height="auto", dpi=900, echo=FALSE}
 knitr::include_graphics("./images/ib_cov_aub_composition.png")
 ```
 ---
