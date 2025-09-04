@@ -1,6 +1,6 @@
 ---
 title: "The semantics of Hmong indefinites"
-subtitle: "Universität Bern, Schweiz  (ICSTLL 58)"
+subtitle: "Universität Bern, Switzerland  (ICSTLL 58)"
 author: "Quartz Colvin"
 institute: "Rutgers University"
 date: "`r Sys.Date()`"
@@ -54,13 +54,36 @@ class: center, middle
 
 ---
 
+# Language background
+
+.pull-left[
+
+- SVO word order
+
+- Hmong communities in the US speak White and Green Hmong, mostly immigrated from Laos
+
+- words are monosyllabic (almost always without consonant coda)
+
+- in the orthography used here (RPA) the final letter of the word corresponds to a tone
+
+- 7 tones: high rising, high falling, mid, low, mid-rising, low-falling creaky, mid/high-falling breathy
+
+]
+
+
+.pull-right[
+```{r, out.width="auto", out.height="auto", echo=FALSE}
+knitr::include_graphics("./images/Hmong_Mien_map.png")
+```
+]
+
+---
+
 # Data
 
 ## Speaker information
 
 - All of my data and discussion are based on elicitation on Zoom with **Ying** and in person with **Keng**, two White Hmong speakers who were raised in Wisconsin (WI). 
-
---
 
 - Keng was born in WI and Ying immigrated to the US at age 4.
 
