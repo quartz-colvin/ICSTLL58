@@ -18,13 +18,13 @@ output:
 
 # Introduction
 
-- This project argues for a choice functional analysis of the indefinite article in White Hmong.
+- This presentation argues for a choice functional analysis of the indefinite article in White Hmong.
 
 - Our discussion includes the indefinite article *ib* and two common classifiers (*tus* and *cov*).
 
 --
 
-## Research questions
+## Research questions for broader project
 
 1. What are the individual meanings of *ib*, *tus*, and *cov*?
 
@@ -36,9 +36,9 @@ output:
 
 ## Outline 
 
-1. Introduction 
+1. Introduction + background
 
-2. Hmong Data
+2. Hmong data
 
 3. Proposal: bare classifier phrases
 
@@ -46,11 +46,6 @@ output:
 
 5. Conclusion
 
----
-
-class: center, middle
-
-# Hmong Data
 
 ---
 
@@ -60,11 +55,11 @@ class: center, middle
 
 - SVO word order
 
-- Hmong communities in the US speak White and Green Hmong, mostly immigrated from Laos
+- diaspora communities in the US speak White and Green Hmong, mainly from Laos
 
-- words are monosyllabic (almost always without consonant coda)
+- monosyllabic words (no consonant codas)
 
-- in the orthography used here (RPA) the final letter of the word corresponds to a tone
+- in RPA orthography the final letter of the word corresponds to a tone
 
 - 7 tones: high rising, high falling, mid, low, mid-rising, low-falling creaky, mid/high-falling breathy
 
@@ -79,15 +74,25 @@ knitr::include_graphics("./images/Hmong_Mien_map.png")
 
 ---
 
-# Data
+# Speaker information
 
-## Speaker information
+- All data and discussion are based on elicitation on Zoom with **Ying** and in person with **Keng**, two (siblings!) White Hmong speakers who were raised in Wisconsin (WI). 
 
-- All of my data and discussion are based on elicitation on Zoom with **Ying** and in person with **Keng**, two White Hmong speakers who were raised in Wisconsin (WI). 
+--
 
 - Keng was born in WI and Ying immigrated to the US at age 4.
 
-- Also they're siblings
+- neither speaker can read/write Hmong
+
+- **Keng:** White Hmong, English, high school German 
+
+- **Ying:** White Hmong, English, high school Japanese 
+
+---
+
+class: center, middle
+
+# Hmong data
 
 ---
 
